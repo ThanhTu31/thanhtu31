@@ -1,0 +1,71 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #48a48a;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #42a5f5;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+.terms-of-use {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.terms-of-use h1 {
+    color: #42a5f5;
+}
+
+.terms-of-use h2 {
+    color: #64b5f6;
+}
+
+.terms-of-use p {
+    color: #757575;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #42a5f5;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.copyright {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles (adjust as needed) */
+@media screen and (max-width: 600px) {
+    .terms-of-use {
+        padding: 10px;
+    }
+}

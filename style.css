@@ -355,6 +355,79 @@ header {
     font-size: 1.6rem;
     font-weight: 600;
 }
+
+.customers h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+/*Thêm comment-section */
+/* Thêm CSS cho comment-section */
+.comment-section {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.comment-section h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+#comments-container {
+    margin-top: 10px;
+}
+
+.comment-box {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#comment-form {
+    margin-top: 20px;
+}
+
+#comment-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+#comment-form input,
+#comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#comment-form textarea {
+    resize: vertical;
+}
+
+#comment-form button {
+    background-color: var(--green-color);
+    color: var(--bg-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#comment-form button:hover {
+    background-color: var(--light-orange-color);
+}
+
+/*Thêm comment-section */
+
 .customers-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
@@ -547,6 +620,7 @@ header {
         grid-template-columns: repeat(auto-fit ,minmax(244px, auto));
     }
 }
+
 @media (max-width: 712px) {
     .container img {
         right: 20px;
@@ -618,4 +692,65 @@ header {
     .categories-conatiner {
         gap: 1.5rem;
     }
+}
+
+/* Thêm comment */
+.comment-section {
+    margin-top: 20px;
+}
+
+#comments-container {
+    margin-top: 10px;
+}
+
+.comment-box {
+    margin-bottom: 10px;
+}
+
+/* chỉnh sửa kích thước ảnh trong shopping-cart
+
+/* Kích thước ảnh trong giỏ hàng */
+#cart-items .cart-item img {
+    max-width: 80px; /* Kích thước tùy chỉnh, điều chỉnh theo nhu cầu */
+    height: auto; /* Đảm bảo tỷ lệ khung hình không bị méo */
+    border-radius: 8px; /* Bo tròn góc cho ảnh */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
+
+/* Ô chứa ảnh và chi tiết sản phẩm */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Đường viền giữa các sản phẩm */
+}
+
+/* Chi tiết sản phẩm */
+.item-details {
+    flex: 1;
+    padding: 0 10px;
+}
+
+/* Hành động trên sản phẩm (Accept, Remove) */
+.item-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nút trong hành động */
+.item-actions button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Màu nền nút Accept */
+    color: #fff; /* Màu chữ nút Accept */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover state cho nút */
+.item-actions button:hover {
+    background-color: #45a049; /* Màu nền hover của nút Accept */
 }
