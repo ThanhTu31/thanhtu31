@@ -1,0 +1,44 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    width: 60%;
+}
+
+article h2 {
+    color: #333;
+}
+
+aside {
+    width: 30%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
